@@ -84,7 +84,6 @@ section#quem-sou-eu h1 b{
     
 }
 section#quem-sou-eu h1 b::after{
-
     content: "";
     position: absolute;
     bottom: 0;
@@ -95,3 +94,13 @@ section#quem-sou-eu h1 b::after{
     border-top: 5px solid var(--PRIMARY-BLUE);
 }
 
+section#quem-sou-eu p#tecnologias{
+    display: flex;
+
+}
+
+section#quem-sou-eu p#tecnologias img{
+    width: 10%;
+    height: auto;
+    fill: transparent!important;
+}
