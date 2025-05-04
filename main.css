@@ -41,6 +41,15 @@ div#body section.body-row{
 section#quem-sou-eu{
     display: flex;
     flex-direction: column;
+
+    background: linear-gradient(145deg, var(--PRIMARY-BLACK) 0%,var(--PRIMARY-BLACK) 80% ,var(--SECONDARY-BLACK) 98%);
+    
+}
+
+section#projetos{
+
+    background: linear-gradient(45deg, var(--PRIMARY-BLACK) 0%,var(--PRIMARY-BLACK) 80% ,var(--SECONDARY-BLACK) 98%);
+
 }
 section#quem-sou-eu h1{
     padding: 2% 0 0 0;
