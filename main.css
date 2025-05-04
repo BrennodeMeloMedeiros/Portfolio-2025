@@ -17,9 +17,14 @@
     position: 0;
     width: 100%;
     height: auto;
+
+    max-height: 100vh!important;
+    max-width: 100vw!important;
 }
 
 html, body{
+    overflow-x: hidden;
+
     background-color: var(--PRIMARY-BLACK);
     padding: 0;
     margin: 0;
@@ -54,9 +59,10 @@ div#body{
     height: auto;
 }
 
-div#body section{
+div#body section.body-row{
     width: 100%;
-    height: 95vh;
+    min-height: 95vh;
+    max-height: 95vh;
 }
 
 section#quem-sou-eu{
@@ -99,8 +105,9 @@ section#quem-sou-eu p#tecnologias{
 
 }
 
-section#quem-sou-eu p#tecnologias img{
-    width: 10%;
-    height: auto;
-    fill: transparent!important;
+section#quem-sou-eu section#tecnologias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
