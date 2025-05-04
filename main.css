@@ -19,6 +19,8 @@ header{
     height: 100%;
     background-color: var(--PRIMARY-BLACK);
     box-shadow: var(--SECONDARY-BLACK) 0px 0px 8px;
+
+    position:fixed;
 }
 
 header img{
@@ -30,6 +32,8 @@ div#body{
     display:flex;
     flex-direction: column;
     height: auto;
+
+    margin-left: 12%;
 }
 
 div#body section.body-row{
@@ -61,18 +65,14 @@ section#quem-sou-eu h1{
     height: 50vh;
  
 }
-section#quem-sou-eu h1 div{
 
-    width: min-content;
-}
-section#quem-sou-eu h1 b{
+#marked{
     width:min-content;
-    /* margin: 6% 0 0 0; */
     font-size: 1.3em;
     position: relative;
     
 }
-section#quem-sou-eu h1 b::after{
+#marked::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -122,5 +122,30 @@ section#quem-sou-eu #buttons a.primary{
 section#quem-sou-eu #buttons a.secondary{
 
     background-color: var(--SECONDARY-BLACK);
+
+}
+
+section#projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section#projetos h1{
+    width: min-content;
+    margin-bottom: 50px;
+
+    font-size: 2rem
+    
+}
+section#projetos .box{
+    width: 95%;
+    height: 98vh;
+    background-color: var(--SECONDARY-BLACK);
+
+    border-radius: 25px;
+
+    margin:auto;
 
 }
