@@ -1,0 +1,62 @@
+:root{
+    --PRIMARY-BLUE: #0090FF;
+    --SECONDARY-BLUE: #68AEF4;
+    --TERTIARY-BLUE: #003362;
+
+    --PRIMARY-BLACK: #121316;
+    --SECONDARY-BLACK: #18191B;
+
+
+
+    --PRIMARY-WHITE: #E8EAED;
+    --SECONDARY-WHITE: #A1A1AA;
+    --PRIMARY-FONT: 'Poppins'
+
+}
+
+html, body{
+
+    background-color: var(--PRIMARY-BLACK);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+
+    font: 12px Poppins, system-ui, sans-serif;
+    color: var(--PRIMARY-WHITE);
+
+    display:flex;
+    flex-direction: row;
+}
+
+
+*{
+    margin: 0;
+    position: 0;
+    width: 100%;
+    height: auto;
+
+    max-height: 100vh!important;
+    max-width: 100vw!important;
+}
+
+b{
+    width: min-content;
+    margin: 0px 10px 0px 10px;
+}
+
+a{
+    color: var(--PRIMARY-WHITE);
+    all:unset;
+    font-size: 1.6rem;
+}
+
+
+
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

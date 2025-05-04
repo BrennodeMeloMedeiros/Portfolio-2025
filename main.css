@@ -6,40 +6,13 @@
     --PRIMARY-BLACK: #121316;
     --SECONDARY-BLACK: #18191B;
 
-    --PRIMARY-WHITE: #E8EAED;
 
+
+    --PRIMARY-WHITE: #E8EAED;
+    --SECONDARY-WHITE: #A1A1AA;
     --PRIMARY-FONT: 'Poppins'
 
 }
-
-*{
-    margin: 0;
-    position: 0;
-    width: 100%;
-    height: auto;
-
-    max-height: 100vh!important;
-    max-width: 100vw!important;
-}
-
-html, body{
-    overflow-x: hidden;
-
-    background-color: var(--PRIMARY-BLACK);
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    min-height: 100%;
-    height: auto;
-
-    font: 12px Poppins, system-ui, sans-serif;
-    color: var(--PRIMARY-WHITE);
-
-    display:flex;
-    flex-direction: row;
-}
-
-
 
 header{
     width: 12%;
@@ -61,21 +34,22 @@ div#body{
 
 div#body section.body-row{
     width: 100%;
-    min-height: 95vh;
-    max-height: 95vh;
+    min-height: 98vh;
+    max-height: 98vh;
 }
 
 section#quem-sou-eu{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 section#quem-sou-eu h1{
-    padding: 10% 0 0 0;
+    padding: 2% 0 0 0;
     font-size: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    justify-content: end;
+    height: 50vh;
  
 }
 section#quem-sou-eu h1 div{
@@ -84,7 +58,7 @@ section#quem-sou-eu h1 div{
 }
 section#quem-sou-eu h1 b{
     width:min-content;
-    margin: 6% 0 0 0;
+    /* margin: 6% 0 0 0; */
     font-size: 1.3em;
     position: relative;
     
@@ -100,14 +74,44 @@ section#quem-sou-eu h1 b::after{
     border-top: 5px solid var(--PRIMARY-BLUE);
 }
 
-section#quem-sou-eu p#tecnologias{
-    display: flex;
+section#quem-sou-eu #descrição .row{
+    width: 100%;
+    
+    margin-top:8vh;
 
-}
+    color: var(--SECONDARY-WHITE);
+    font-size: 1.55em;
 
-section#quem-sou-eu section#tecnologias{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
+section#quem-sou-eu #buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 8vh auto;
+    width: 40%;
+}
+
+
+section#quem-sou-eu #buttons a{
+    width: min-content;
+    padding: 10px 25px;
+    border-radius: 12px;
+}
+
+section#quem-sou-eu #buttons a.primary{
+
+    background-color: var(--PRIMARY-BLUE);
+
+}
+
+
+section#quem-sou-eu #buttons a.secondary{
+
+    background-color: var(--SECONDARY-BLACK);
+
+}
