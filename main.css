@@ -137,7 +137,71 @@ section#projetos .box{
 
 #timeline{
     width: 100%;
-    min-height: 80vh;
-    max-height: 100%;
-    background-color: red;
+    min-height: 25vh;
+
+
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+
+}
+
+
+.line{
+    
+    
+    width: 95%;
+    height: 5px;
+
+    background-color: var(--PRIMARY-WHITE);
+
+}
+
+.content{
+    width: 95%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+.content .label{
+    width: 20%;
+    margin-top: 1rem;
+    position: relative;
+
+    font-size: 2rem;
+
+    border-radius: 15px;
+
+    padding:2% 1% 2% 1%;
+
+
+    background-color: var(--SECONDARY-BLACK);
+}
+
+.content .label::before{
+    content:'|';
+
+    position: absolute;
+    top:-1rem;
+    left:10%;
+
+
+    font-size: 1rem;
+    font-weight: bolder;
+
+    /* transform: rotate(-90deg); */
+}
+.content .label p{
+    font-size: 1rem;
+}
+
+
+
+
+.time-description{
+    height: 100%;
 }
