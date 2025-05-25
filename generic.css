@@ -28,6 +28,8 @@ html, body{
 
     display:flex;
     flex-direction: row;
+
+    scroll-behavior: smooth;
 }
 *{
     margin: 0;
@@ -48,13 +50,14 @@ a{
     color: var(--PRIMARY-WHITE);
     all:unset;
     font-size: 1.6rem;
+    cursor: pointer;
 }
 
 
 h1.title{
-    width: min-content;
+    width: fit-content;
+    margin-top: 15px;
     margin-bottom: 50px;
-
     font-size: 2rem
 }
 .row{
@@ -65,10 +68,8 @@ h1.title{
 }
 
 .marked{
-    width:min-content;
     font-size: 1.3em;
     position: relative;
-    
 }
 .marked::after{
     content: "";
