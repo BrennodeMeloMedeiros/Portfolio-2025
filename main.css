@@ -2,6 +2,7 @@
     --PRIMARY-BLUE: #0090FF;
     --SECONDARY-BLUE: #68AEF4;
     --TERTIARY-BLUE: #003362;
+    --BLUE: #6677fa;
 
     --PRIMARY-BLACK: #121316;
     --SECONDARY-BLACK: #18191B;
@@ -20,7 +21,7 @@ div#body{
     flex-direction: column;
     height: auto;
 
-    margin-left: 12%;
+    margin-left: 12%!important;
 }
 
 div#body section.body-row{
@@ -70,14 +71,14 @@ header nav#logo{
     margin-left:0px;
 }
 header nav#logo.activated::before{
-    content: '';
+    /* content: '';
     width: 100%;
     height: 3px;
     background-color: var(--PRIMARY-BLUE);
 
     left:0px;
     bottom:0;
-    position: absolute;
+    position: absolute; */
 }
 
 header .contato{
@@ -123,6 +124,10 @@ section#quem-sou-eu h1{
  
 }
 
+section#quem-sou-eu b{
+    width: min-content;
+    margin: 0px 10px 0px 10px;
+}
 
 
 section#quem-sou-eu #descrição .row{
@@ -165,18 +170,20 @@ section#quem-sou-eu #buttons a.secondary{
 
 /* ====================================================== */
 /* PROJETOS */
-section.projetos{
+section#projetos{
     background: linear-gradient(45deg, var(--PRIMARY-BLACK) 0%,var(--PRIMARY-BLACK) 80% ,var(--SECONDARY-BLACK) 98%);
+
+    justify-content: center;
 }
-section.projetos h1{
+section#projetos h1{
     width: min-content;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 
     font-size: 2rem
 }
-section.projetos .box{
+section#projetos .box{
     width: 95%;
-    height: 95vh;
+    height: 80vh;
     max-height: 95vh;
     background-color: var(--SECONDARY-BLACK);
 
@@ -184,6 +191,72 @@ section.projetos .box{
 
     margin:auto;
 
+}
+/* ====================================================== */
+/* SOBRE MIM */
+#sobre-mim{
+    width: 95%!important;
+    padding:0% 2.5%;
+}
+
+#sobre-mim span.apresentacao{
+    font-size: 1.3rem;
+    width: 100%;
+}
+#sobre-mim b{
+    /* text-decoration: underline;
+    text-decoration-color: var(--SECONDARY-BLUE) */
+    color: var(--BLUE);
+}
+
+#detalhes-grid{
+    width: 100%;
+    height: 95%;
+    padding:5% 0;
+    display: grid;
+}
+
+#detalhes-grid span{
+    width: fit-content;
+    height: min-content;
+    text-align: center;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+    
+    background-color: var(--SECONDARY-BLACK);
+
+    font-size: 1.4rem;
+}
+
+#detalhes-grid #detalhes-diversos span{
+    margin: 10px;
+}
+
+#detalhes-grid span.title{
+    width: fit-content;
+    padding: 0;
+    margin: 0!important;;
+    font-weight: bold;
+}
+
+#detalhes-grid #detalhes-diversos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#detalhes-grid div.subtitle{
+    font-size: 1.7rem;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+#detalhes-grid div.subtitle::after{
+    height: 1px;
+    border-top: 3px solid var(--SECONDARY-BLUE);
 }
 
 /* ====================================================== */
