@@ -51,6 +51,13 @@ header{
 
 header nav{
     margin-left:10px;
+    
+}
+
+
+header nav a{
+    font-size:1.2rem;
+    
 }
 
 header nav.activated{
@@ -82,7 +89,7 @@ header nav#logo.activated::before{
 }
 
 header .contato{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     position: absolute;
     bottom: 1%;
 
@@ -200,7 +207,8 @@ section#projetos .box{
 }
 
 #sobre-mim span.apresentacao{
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+    font-size:1.2vw;
     width: 100%;
 }
 #sobre-mim b{
@@ -209,14 +217,7 @@ section#projetos .box{
     color: var(--BLUE);
 }
 
-#detalhes-grid{
-    width: 100%;
-    height: 95%;
-    padding:5% 0;
-    display: grid;
-}
-
-#detalhes-grid span{
+#sobre-mim span.label{
     width: fit-content;
     height: min-content;
     text-align: center;
@@ -227,37 +228,63 @@ section#projetos .box{
     
     background-color: var(--SECONDARY-BLACK);
 
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
+    font-size: 100%;
 }
 
-#detalhes-grid #detalhes-diversos span{
+#detalhes-diversos{
+    margin:5% 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#detalhes-diversos span.linguas{
     margin: 10px;
 }
 
-#detalhes-grid span.title{
+#detalhes-tecnicos{
+    display: flex;
+    margin-top: 5%;
+    height: 100%;
+}
+
+#detalhes-tecnicos span.title{
     width: fit-content;
     padding: 0;
     margin: 0!important;;
     font-weight: bold;
 }
 
-#detalhes-grid #detalhes-diversos{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-#detalhes-grid div.subtitle{
+#detalhes-tecnicos div.subtitle{
     font-size: 1.7rem;
 
     width: fit-content;
     height: fit-content;
+    margin-bottom:3px;
 }
 
-#detalhes-grid div.subtitle::after{
+#detalhes-tecnicos div.subtitle::after{
     height: 1px;
     border-top: 3px solid var(--SECONDARY-BLUE);
 }
+
+#detalhes-tecnicos .tecnologias-certificados{
+    width: 50%;
+}
+#detalhes-tecnicos .tecnologias-certificados #box{
+    width: 70%;
+    height: min-content;
+    margin-right:auto;
+    margin-bottom:auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#detalhes-tecnicos .tecnologias-certificados #box .label{
+    margin: 20px 10px;
+}  
 
 /* ====================================================== */
 /* CARREIRA */
