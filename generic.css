@@ -77,3 +77,7 @@ h1.title{
     height: 10px;
     border-top: 5px solid var(--PRIMARY-BLUE);
 }
+
+.full-width{
+    width: 100%!important;
+}

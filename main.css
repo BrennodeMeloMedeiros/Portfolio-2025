@@ -268,10 +268,11 @@ section#projetos .box{
     border-top: 3px solid var(--SECONDARY-BLUE);
 }
 
+
 #detalhes-tecnicos .tecnologias-certificados{
     width: 50%;
 }
-#detalhes-tecnicos .tecnologias-certificados #box{
+#detalhes-tecnicos .tecnologias-certificados .box{
     width: 70%;
     height: min-content;
     margin-right:auto;
@@ -281,10 +282,40 @@ section#projetos .box{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+
 }
-#detalhes-tecnicos .tecnologias-certificados #box .label{
+#detalhes-tecnicos .tecnologias-certificados .box .label{
     margin: 20px 10px;
-}  
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    flex-direction: column;
+    height: auto;
+
+}
+
+#detalhes-tecnicos .tecnologias-certificados .box .label .label-title b{
+    color:var(--PRIMARY-BLUE);
+}
+
+#detalhes-tecnicos .tecnologias-certificados .box .label .rotulos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin:10px 0;
+}
+
+#detalhes-tecnicos .tecnologias-certificados .box .label .rotulos .rotulo-label{
+    width: fit-content;
+    font-size: 0.9em;
+    background-color: var(--PRIMARY-BLACK);
+    color:var(--PRIMARY-WHITE);
+    padding: 5px 7px;
+    border-radius: 20px;
+}
+
+
 
 /* ====================================================== */
 /* CARREIRA */
