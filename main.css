@@ -340,7 +340,7 @@ section#projetos .box{
     background-color: var(--PRIMARY-WHITE);
 
 }
-.content{
+.time-line.content{
     width: 95%;
 
     display: flex;
@@ -348,7 +348,7 @@ section#projetos .box{
     justify-content: space-between;
 
 }
-.content .label{
+.time-line.content .box{
     width: 20%;
     margin-top: 1rem;
     position: relative;
@@ -362,7 +362,7 @@ section#projetos .box{
 
     background-color: var(--SECONDARY-BLACK);
 }
-.content .label::before{
+.time-line.content .box::before{
     content:'|';
 
     position: absolute;
@@ -375,31 +375,73 @@ section#projetos .box{
 
     /* transform: rotate(-90deg); */
 }
-.content .label p{
+.time-line.content .box p{
     font-size: 1rem;
 }
 
-.content .label .bottom{
+.time-line.content .box .bottom{
     font-size: 1rem;
     display: none;
     position: absolute;
 }
-
-.content .label.active .bottom{
+.time-line.content .box.active h4{
+    color:var(--SECONDARY-BLUE);
+}
+.time-line.content .box.active .bottom{
     display: block;
     font-size: 1rem;
     border-radius: 0 0 15px 15px;
-    background-color: var(--PRIMARY-BLUE);
-    
+    background-color: var(--SECONDARY-BLUE);
     width: 100%;
     height: 8px;
     left: 0;
     bottom:0;
 }
 
+article#atuacao{
+    display: flex;
+    flex-direction: column;
 
-.time-description{
     height: 100%;
     width: 97.5%;
     padding-left: 2.5%;
+    background-color: red;
+}
+
+article#atuacao #introducao{
+    height: 40%;
+
+}
+
+article#atuacao #introducao #titulo{
+ 
+}
+article#atuacao #introducao #descricao{
+
+}
+
+article#atuacao .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    
+    height: 100%;
+    background-color: blue;
+}
+
+article#atuacao .container div{ 
+    display: flex;
+    flex-direction: column;
+height: 100%;
+}
+
+article#atuacao .container div h4{
+    font-size:1rem;
+    background-color: #003362;
+}
+
+article#atuacao .container div span.detalhes{
+    height: 100%;
+    background-color: green;
 }
