@@ -77,16 +77,6 @@ header nav.activated::before{
 header nav#logo{
     margin-left:0px;
 }
-header nav#logo.activated::before{
-    /* content: '';
-    width: 100%;
-    height: 3px;
-    background-color: var(--PRIMARY-BLUE);
-
-    left:0px;
-    bottom:0;
-    position: absolute; */
-}
 
 header .contato{
     font-size: 1.1rem;
@@ -217,21 +207,6 @@ section#projetos .box{
     color: var(--BLUE);
 }
 
-#sobre-mim span.label{
-    width: fit-content;
-    height: min-content;
-    text-align: center;
-
-    padding: 5px 10px;
-
-    border-radius: 5px;
-    
-    background-color: var(--SECONDARY-BLACK);
-
-    /* font-size: 1.4rem; */
-    font-size: 100%;
-}
-
 #detalhes-diversos{
     margin:5% 0 0 0;
     display: flex;
@@ -295,7 +270,7 @@ section#projetos .box{
 }
 
 #detalhes-tecnicos .tecnologias-certificados .box .label .label-title b{
-    color:var(--PRIMARY-BLUE);
+    color:var(--BLUE);
 }
 
 #detalhes-tecnicos .tecnologias-certificados .box .label .rotulos{
@@ -322,7 +297,7 @@ section#projetos .box{
 
 #timeline{
     width: 100%;
-    min-height: 25vh;
+    height: 30%;
 
 
     display: flex;
@@ -402,10 +377,9 @@ article#atuacao{
     display: flex;
     flex-direction: column;
 
-    height: 100%;
+    height: 70%;
     width: 97.5%;
     padding-left: 2.5%;
-    background-color: red;
 }
 
 article#atuacao #introducao{
@@ -414,10 +388,15 @@ article#atuacao #introducao{
 }
 
 article#atuacao #introducao #titulo{
- 
+    
 }
 article#atuacao #introducao #descricao{
 
+}
+
+article#atuacao #detalhes{
+    display: flex;
+    height: 60%;
 }
 
 article#atuacao .container{
@@ -427,21 +406,29 @@ article#atuacao .container{
     align-items: start;
     
     height: 100%;
-    background-color: blue;
 }
 
-article#atuacao .container div{ 
+article#atuacao .container.skills{
     display: flex;
     flex-direction: column;
-height: 100%;
 }
 
-article#atuacao .container div h4{
+article#atuacao .container.skills div.detalhes{
+    width: 50%;
+    height: fit-content;
+
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+}
+
+article#atuacao .container.skills h4{
     font-size:1rem;
-    background-color: #003362;
+    
 }
 
-article#atuacao .container div span.detalhes{
-    height: 100%;
-    background-color: green;
+article#atuacao .container.skills div.detalhes .label{
+    margin: 10px 0;
+    color: var(--SECONDARY-WHITE);
 }
